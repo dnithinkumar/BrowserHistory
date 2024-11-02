@@ -1,0 +1,93 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: content-box;
+}
+
+.history-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.time {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 16px;
+  color: #64748b;
+  margin-bottom: 10px;
+}
+
+.domain-logo {
+  width: 30px;
+  height: 30px;
+}
+
+.domain-name {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 16px;
+  color: #475569;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.domain-url {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #64748b;
+  padding-top: 5px;
+}
+
+.delete-icon {
+  width: 20px;
+}
+
+.delete-button {
+  border: none;
+  background-color: #ffffff;
+  margin-top: 10px;
+  text-align: start;
+}
+
+@media (min-width: 768px) {
+  .history-item {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .domain-delete-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+  }
+
+  .domain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .time {
+    margin-right: 30px;
+    width: 10%;
+  }
+
+  .domain-name {
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+  .delete-button {
+    text-align: end;
+    margin-left: 20px;
+  }
+
+  .delete-icon {
+    width: 25px;
+  }
+}
